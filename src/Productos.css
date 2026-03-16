@@ -90,3 +90,49 @@ h2 {
   margin-bottom: 20px;
 }
 
+.servicios_1 {
+  width: 70vw;
+  height: 29vh;
+  margin-left: 15rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: #547e49da;
+  color: #f0f0f0;
+  border-radius: 34px;
+}
+
+.info_h2 {
+  gap: 2rem;
+}
+
+.info_servicios_1 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.servicios_2 {
+  background-color: aqua;
+  width: 100%;
+  min-height: 105vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.servicios_2 div {
+  text-align: center;
+  max-width: 300px;
+}
+
+.servicios_2 p {
+  margin-bottom: 1rem;
+}
+
+.fotos {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 10px;
+}

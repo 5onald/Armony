@@ -7,6 +7,10 @@ import chifrijo from './assets/productos/chifrijo.webp'
 import sandwich from './assets/productos/sandwich.jpg'
 import pieLimon from './assets/productos/pie-limon.jpg'
 import jugoSandia from './assets/productos/jugo-sandia.jpg'
+import bancas1 from './assets/servicios/bancas.jpg'
+import bancas2 from './assets/servicios/bancas_atras.jpg'
+import yard from './assets/servicios/yard.jpg'
+import parking from './assets/servicios/parking.jpg'
 
 
 function App() {
@@ -50,7 +54,6 @@ function App() {
       </section>
     
       <section className='direccion'>
-
       <div className='sobre-nosotros'>
         <h2>Sobre nosotros</h2>
         <p>En el departamento de Soda Armonía, nos enorgullece ofrecer alimentos saludables y de calidad que nutren y cuidan a nuestra comunidad. Nuestro enfoque se centra en productos que no solo son deliciosos, sino que también contribuyen a un estilo de vida equilibrado y consciente.
@@ -71,6 +74,43 @@ function App() {
           loading="lazy" 
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
+      </section>
+
+      <br /><br /><br /><br /><br />
+
+      <section className="servicios_1">
+          <h2 className='info_h2'>¡Por otra parte, Armonía cuenta con otros servicios!</h2>
+          <p className="info_servicios_1">
+            Durante 2022, debido a un tornado que paso por Belén. Este provocó una serie de devastaciones a toda la zona.
+            Sin embargo, Armonia pudo enfrentar esta situación de manera excelente, tanto así que inició la construcción de una
+            serie de infraestructuras para que las personas pudiesen acceder a estas. Después de un tiempo, se convirtió en lo que
+            hoy en día se llama "Soda Armonía"
+          </p>
+      </section>
+
+      <br />
+
+      <section className='servicios_2'>
+          <div>
+            <h3>Bancas Principales</h3>
+            <p>En esta parte de la soda, podrás sentirte libre y comeder al aire libre.</p>
+            <img className='fotos' src={bancas1} alt="Bancas" />
+          </div>
+          <div>
+            <h3>Bancas Cancha</h3>
+            <p>En caso de que no lo desees así, puedes ir a las bancas que están por la cancha</p>
+            <img className='fotos'src={bancas2}  alt="Bancas por la cancha" />
+          </div>
+          <div>
+            <h3>Cancha</h3>
+            <p>En esta cancha podrás jugar muchos partidos con tus amigos.</p>
+            <img className='fotos' src={yard}  alt="Cancha" />
+          </div>
+          <div>
+            <h3>Estacionamiento</h3>
+            <p>Contamos con un parque exclusivo, por si algún día quiere parquear tu carro.</p>
+            <img className='fotos' src={parking}  alt="Parqueo" />
+          </div>
       </section>
     </>
   )
