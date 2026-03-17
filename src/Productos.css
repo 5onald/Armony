@@ -111,9 +111,10 @@ h2 {
 }
 
 .servicios_2 {
-  background-color: aqua;
   width: 100%;
-  min-height: 105vh;
+  min-height: 23vh;
+  background-color: #547e49da;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: flex-start;
