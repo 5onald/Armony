@@ -90,7 +90,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-
 /* ------------------- Introducción a Soda Armonía ------------------- */
 .servicios_1 {
   width: 100%;
@@ -108,48 +107,64 @@ h2 {
   font-size: 1.3rem;
 }
 
-
 /* ------------------- Servicios Soda Armonía ------------------- */
 .servicios_2 {
-  background-color: chartreuse;
+  background-color: #72e96200;
   width: 100%;
   color: white;
+  padding: 0 2rem;
+}
+
+.servicios_2gen {
   display: flex;
   justify-content: center;
-  gap: 4.5rem;
-  padding: 3rem;
+  align-items: stretch;
+  gap: 4rem;
+  flex-wrap: wrap;
 }
 
-.servicios_2 div h3 {
-  font-size: 1.3rem;
-  margin-bottom: 0.9rem;
-}
-
-.servicios_2 div {
-  width: 24rem;
+.servicios2espe {
+  background-color: rgba(255, 255, 255, 0.863);
+  border: 3px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  width: 22rem;
+  min-height: 30rem;
   text-align: center;
-}
-
-.servicios_2 p {
-  margin-bottom: 2.6rem;
-}
-
-.conterFotos {
-  background-color: brown;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 22px;
+}
 
+.servicios2espe h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.servicios2espe p {
+  background-color: #88e96200;
   width: 100%;
-  height: 14rem;
-  object-fit: cover;
-  border-radius: 10px;
+  min-height: 9rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grupoFotos {
+  width: 100%;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 .fotos {
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  height: 13rem;
   object-fit: cover;
-  border-radius: 30%;
-  border: 3px solid white;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(216, 33, 33, 0.3);
   filter: sepia(30%);
 }

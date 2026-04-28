@@ -94,32 +94,41 @@ function App() {
       <br />
 
       <section className='servicios_2'>
-          <div>
+        <div className='servicios_2gen'>
+          <div className='servicios2espe'>
             <h3>Zona de Descanso Principal</h3>
             <p>Disfrutá de un espacio cómodo y tranquilo al aire libre, 
               ideal para relajarte, compartir con otras personas y disfrutar tus comidas en un ambiente natural y agradable.</p>
+              <div className='grupoFotos'>
+                <img className='fotos' src={bancas1} alt="Bancas" />
+              </div>
           </div>
-          <div>
+          <div className='servicios2espe'>
             <h3>Zona de Descanso junto a la Cancha</h3>
             <p>Contás con áreas ubicadas cerca de la cancha donde podés 
               sentarte a descansar, conversar o simplemente disfrutar del entorno mientras observás los partidos.</p>
+              <div className='grupoFotos'>
+                <img className='fotos'src={bancas2}  alt="Bancas por la cancha" />
+              </div>
           </div>
-          <div>
-            <h3>Zona Recreativa</h3>
+          <div className='servicios2espe'>
+            <h3>Ian es muy gay</h3>
             <p>Aprovechá un espacio amplio y adecuado para jugar distintos 
               partidos, ejercitarte y compartir momentos divertidos con tus amigos en un ambiente seguro.</p>
+              <div className='grupoFotos'>
+                <img className='fotos' src={yard}  alt="Cancha" />
+              </div>
           </div>
-          <div>
+          <div className='servicios2espe'>
             <h3>Parqueo Exclusivo</h3>
-            <p>Disponés de un parqueo exclusivo pensado para brindarte mayor 
-              comodidad, fácil acceso y seguridad para tu vehículo durante tu visita.</p>
+            <p>Parqueo exclusivo diseñado para brindarte mayor comodidad, fácil acceso y seguridad para tu vehículo 
+              durante toda tu visita, permitiéndote disfrutar del lugar con total 
+              tranquilidad.</p>
+              <div className='grupoFotos'>
+                <img className='fotos' src={parking}  alt="Parqueo" />
+              </div> 
           </div>
-          <div className='conterFotos'>
-            <img className='fotos' src={bancas1} alt="Bancas" />
-            <img className='fotos'src={bancas2}  alt="Bancas por la cancha" />
-            <img className='fotos' src={yard}  alt="Cancha" />
-            <img className='fotos' src={parking}  alt="Parqueo" />
-          </div>
+        </div>
       </section>
     </>
   )
