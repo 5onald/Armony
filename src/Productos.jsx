@@ -76,15 +76,18 @@ function App() {
         ></iframe>
       </section>
 
-      <br /><br /><br /><br /><br />
+      <br /><br /><br />
 
       <section className="servicios_1">
           <h2 className='info_h2'>¡Por otra parte, Armonía cuenta con otros servicios!</h2>
           <p className="info_servicios_1">
-            Durante 2022, debido a un tornado que paso por Belén. Este provocó una serie de devastaciones a toda la zona.
-            Sin embargo, Armonia pudo enfrentar esta situación de manera excelente, tanto así que inició la construcción de una
-            serie de infraestructuras para que las personas pudiesen acceder a estas. Después de un tiempo, se convirtió en lo que
-            hoy en día se llama "Soda Armonía"
+            Durante el año 2022, debido a un tornado que pasó por Belén, 
+            se produjo una serie de devastaciones en toda la zona. Sin 
+            embargo, Armonía logró enfrentar esta situación de manera 
+            excelente; es por eso que inició la construcción de diversas 
+            infraestructuras para que las personas pudieran acceder a 
+            ellas. Con el paso del tiempo, este proyecto evolucionó hasta 
+            convertirse en lo que hoy en día se conoce como “Soda Armonía”.
           </p>
       </section>
 
@@ -92,23 +95,29 @@ function App() {
 
       <section className='servicios_2'>
           <div>
-            <h3>Bancas Principales</h3>
-            <p>En esta parte de la soda, podrás sentirte libre y comeder al aire libre.</p>
+            <h3>Zona de Descanso Principal</h3>
+            <p>Disfrutá de un espacio cómodo y tranquilo al aire libre, 
+              ideal para relajarte, compartir con otras personas y disfrutar tus comidas en un ambiente natural y agradable.</p>
+          </div>
+          <div>
+            <h3>Zona de Descanso junto a la Cancha</h3>
+            <p>Contás con áreas ubicadas cerca de la cancha donde podés 
+              sentarte a descansar, conversar o simplemente disfrutar del entorno mientras observás los partidos.</p>
+          </div>
+          <div>
+            <h3>Zona Recreativa</h3>
+            <p>Aprovechá un espacio amplio y adecuado para jugar distintos 
+              partidos, ejercitarte y compartir momentos divertidos con tus amigos en un ambiente seguro.</p>
+          </div>
+          <div>
+            <h3>Parqueo Exclusivo</h3>
+            <p>Disponés de un parqueo exclusivo pensado para brindarte mayor 
+              comodidad, fácil acceso y seguridad para tu vehículo durante tu visita.</p>
+          </div>
+          <div className='conterFotos'>
             <img className='fotos' src={bancas1} alt="Bancas" />
-          </div>
-          <div>
-            <h3>Bancas Cancha</h3>
-            <p>En caso de que no lo desees así, puedes ir a las bancas que están por la cancha</p>
             <img className='fotos'src={bancas2}  alt="Bancas por la cancha" />
-          </div>
-          <div>
-            <h3>Cancha</h3>
-            <p>En esta cancha podrás jugar muchos partidos con tus amigos.</p>
             <img className='fotos' src={yard}  alt="Cancha" />
-          </div>
-          <div>
-            <h3>Estacionamiento</h3>
-            <p>Contamos con un parque exclusivo, por si algún día quiere parquear tu carro.</p>
             <img className='fotos' src={parking}  alt="Parqueo" />
           </div>
       </section>
