@@ -76,8 +76,6 @@ function App() {
         ></iframe>
       </section>
 
-      <br /><br /><br />
-
       <section className="servicios_1">
           <h2 className='info_h2'>¡Por otra parte, Armonía cuenta con otros servicios!</h2>
           <p className="info_servicios_1">
@@ -91,8 +89,6 @@ function App() {
           </p>
       </section>
 
-      <br />
-
       <section className='servicios_2'>
         <div className='servicios_2gen'>
           <div className='servicios2espe'>
@@ -102,6 +98,19 @@ function App() {
               <div className='grupoFotos'>
                 <img className='fotos' src={bancas1} alt="Bancas" />
               </div>
+              <div className='butcarrito'>
+
+                <label htmlFor="mesa-principal" className='text-butcarrito'>¿Cuál mesa desea reservar?</label>
+
+                <select name="mesa-principal" id="mesa-principal" defaultValue="">
+                  <option value="" disabled>--Seleccione una mesa--</option>
+                  <option value="mesa-1">Mesa 1</option>
+                  <option value="mesa-2">Mesa 2</option>  
+                  <option value="mesa-3">Mesa 3</option>
+                </select>
+
+                <button type='button'>Agregar</button>
+              </div>
           </div>
           <div className='servicios2espe'>
             <h3>Zona de Descanso junto a la Cancha</h3>
@@ -109,6 +118,21 @@ function App() {
               sentarte a descansar, conversar o simplemente disfrutar del entorno mientras observás los partidos.</p>
               <div className='grupoFotos'>
                 <img className='fotos'src={bancas2}  alt="Bancas por la cancha" />
+              </div>
+              <div className='butcarrito'>
+
+                <label htmlFor="mesa-principal" className='text-butcarrito'>¿Cuál mesa desea reservar?</label>
+
+                <select name="mesa-principal" id="mesa-principal" defaultValue="">
+                  <option value="" disabled>--Seleccione una mesa--</option>
+                  <option value="mesa-1-2">Mesa 1</option>
+                  <option value="mesa-2-2">Mesa 2</option>  
+                  <option value="mesa-3-2">Mesa 3</option>
+                  <option value="mesa-4-2">Mesa 4</option>
+                  <option value="mesa-5-2">Mesa 5</option>
+                </select>
+
+                <button type='button'>Agregar</button>
               </div>
           </div>
           <div className='servicios2espe'>
@@ -118,6 +142,21 @@ function App() {
               <div className='grupoFotos'>
                 <img className='fotos' src={yard}  alt="Cancha" />
               </div>
+              <div className='butcarrito'>
+
+                <label htmlFor="mesa-principal" className='text-butcarrito'>¿Cuál hora desea reservar?</label>
+
+                <select name="mesa-principal" id="mesa-principal" defaultValue="">
+                  <option value="" disabled>--Seleccione una hora--</option>
+                  <option value="hora-1">7:00 am - 8:00 am</option>
+                  <option value="hora-2">8:30 am - 9:30 am</option>  
+                  <option value="hora-3">10:00 am - 11:00 am</option>
+                  <option value="hora-4">12:00 pm - 1:00 pm</option>
+                  <option value="hora-5">1:30 pm - 2:30 pm</option>
+                </select>
+
+                <button type='button'>Agregar</button>
+              </div>
           </div>
           <div className='servicios2espe'>
             <h3>Parqueo Exclusivo</h3>
@@ -126,7 +165,22 @@ function App() {
               tranquilidad.</p>
               <div className='grupoFotos'>
                 <img className='fotos' src={parking}  alt="Parqueo" />
-              </div> 
+              </div>
+              <div className='butcarrito'>
+
+                <label htmlFor="mesa-principal" className='text-butcarrito'>¿Cuál campo desea reservar?</label>
+
+                <select name="mesa-principal" id="mesa-principal" defaultValue="">
+                  <option value="" disabled>--Seleccione un campo--</option>
+                  <option value="mesa-1">Campo 1</option>
+                  <option value="mesa-2">Campo 2</option>  
+                  <option value="mesa-3">Campo 3</option>
+                  <option value="mesa-4">Campo 4</option>
+                  <option value="mesa-5">Campo 5</option>
+                </select>
+
+                <button type='button'>Agregar</button>
+              </div>
           </div>
         </div>
       </section>

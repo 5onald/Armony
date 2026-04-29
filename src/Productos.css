@@ -95,6 +95,7 @@ h2 {
   width: 100%;
   height: 26vh;
   padding: 2rem;
+  margin-top: 1.8rem;
   text-align: center;
   background-color: #547e4900;
   color: #f0f0f0;
@@ -102,9 +103,9 @@ h2 {
 }
 
 .info_servicios_1 {
-  width: 68rem;
+  width: 75rem;
   margin-top: 3.1rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 /* ------------------- Servicios Soda Armonía ------------------- */
@@ -113,6 +114,7 @@ h2 {
   width: 100%;
   color: white;
   padding: 0 2rem;
+  margin-bottom: 5rem;
 }
 
 .servicios_2gen {
@@ -124,9 +126,8 @@ h2 {
 }
 
 .servicios2espe {
-  background-color: rgba(255, 255, 255, 0.863);
+  background-color: #f5f1e8;
   border: 3px solid rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
   width: 22rem;
   min-height: 30rem;
   text-align: center;
@@ -139,11 +140,12 @@ h2 {
 
 .servicios2espe h3 {
   font-size: 1.1rem;
-  margin-bottom: 1rem;
+  color: #2f5d3a;
 }
 
 .servicios2espe p {
   background-color: #88e96200;
+  color: #444;
   width: 100%;
   min-height: 9rem;
   padding: 1rem;
@@ -154,7 +156,7 @@ h2 {
 
 .grupoFotos {
   width: 100%;
-  margin-top: 1.5rem;
+  margin-top: 0.1rem;
   display: flex;
   justify-content: center;
 }
@@ -167,4 +169,47 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(216, 33, 33, 0.3);
   filter: sepia(30%);
+}
+
+/* -------- Selección u Opciones -------- */
+
+.butcarrito {
+  background-color: rgba(218, 207, 103, 0);
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  margin-top: 1.4rem;
+  width: 15vw;
+  height: 13vh;
+  gap: 1.4rem;
+}
+
+.text-butcarrito {
+  background-color: rgba(228, 51, 213, 0);
+  color: #444;
+  width: 13vw;
+}
+
+#mesa-principal {
+  background-color: #f5f1e8;
+  text-align: center;
+  width: 11vw;
+  color: #444;
+}
+
+button {
+  background-color: #da9d68;
+  color: white;
+  border-radius: 8px;
+  height: 2.3vh;
+  width: 6vw;
+  border: none;
+  cursor: pointer;
+  transition: all 0.45s ease;
+}
+
+button:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
