@@ -11,6 +11,7 @@ import bancas1 from './assets/servicios/bancas.jpg'
 import bancas2 from './assets/servicios/bancas_atras.jpg'
 import yard from './assets/servicios/yard.jpg'
 import parking from './assets/servicios/parking.jpg'
+import { supabase } from './supabaseCliente.js'
 
 
 function App() {
@@ -93,7 +94,7 @@ function App() {
         <div className='servicios_2gen'>
           <div className='servicios2espe'>
             <h3>Zona de Descanso Principal</h3>
-            <p>Disfrutá de un espacio cómodo y tranquilo al aire libre, 
+            <p>Disfruta de un espacio cómodo y tranquilo al aire libre, 
               ideal para relajarte, compartir con otras personas y disfrutar tus comidas en un ambiente natural y agradable.</p>
               <div className='grupoFotos'>
                 <img className='fotos' src={bancas1} alt="Bancas" />
@@ -128,8 +129,6 @@ function App() {
                   <option value="mesa-1-2">Mesa 1</option>
                   <option value="mesa-2-2">Mesa 2</option>  
                   <option value="mesa-3-2">Mesa 3</option>
-                  <option value="mesa-4-2">Mesa 4</option>
-                  <option value="mesa-5-2">Mesa 5</option>
                 </select>
 
                 <button type='button'>Agregar</button>
@@ -137,7 +136,7 @@ function App() {
           </div>
           <div className='servicios2espe'>
             <h3>Ian es muy gay</h3>
-            <p>Aprovechá un espacio amplio y adecuado para jugar distintos 
+            <p>Aprovecha un espacio amplio y adecuado para jugar distintos 
               partidos, ejercitarte y compartir momentos divertidos con tus amigos en un ambiente seguro.</p>
               <div className='grupoFotos'>
                 <img className='fotos' src={yard}  alt="Cancha" />
@@ -176,7 +175,6 @@ function App() {
                   <option value="mesa-2">Campo 2</option>  
                   <option value="mesa-3">Campo 3</option>
                   <option value="mesa-4">Campo 4</option>
-                  <option value="mesa-5">Campo 5</option>
                 </select>
 
                 <button type='button'>Agregar</button>
