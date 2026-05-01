@@ -12,19 +12,21 @@ body {
 
 body::before {
   content: '';
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                     url('./assets/fondo-pantalla-arboles.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed; 
-  position: fixed; 
+  background-attachment: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
+
+/* ------------------- Títulos generales ------------------- */
 
 h1 {
   color: #ffffff;
@@ -36,180 +38,550 @@ h2 {
   color: #ffffff;
 }
 
-.info-productos h1 {
-  margin-bottom: 2rem;
-  color: #f0f0f0; 
-}
+/* ------------------- Info productos ------------------- */
 
 .info-productos {
   color: #ffffff;
+  width: 90%;
+  max-width: 100rem;
   margin: 2rem auto;
   line-height: 1.6;
-  max-width: 100rem;
   font-size: 1.2rem;
-  margin-bottom: -3rem;
+}
+
+.info-productos h1 {
+  margin-bottom: 2rem;
+  color: #f0f0f0;
 }
 
 .info-productos strong {
   color: #a8e063;
 }
 
+.info-productos ul {
+  padding-left: 1.4rem;
+}
+
+/* ------------------- Dirección / Sobre nosotros ------------------- */
+
 .direccion {
   width: 100%;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
+  gap: 3rem;
   background-color: #161313;
   padding: 3rem;
 }
 
 .sobre-nosotros {
   color: #ffffff;
-  margin: 5rem;
-  flex-direction: column;
-  flex: 1; 
+  flex: 1;
 }
 
 .direccion iframe {
-  max-width: 800px;
   width: 100%;
-  height: 600px;
-  border-radius: 15px;
-  margin: 3rem;
+  max-width: 50rem;
+  height: 37rem;
+  border-radius: 1rem;
+  margin: 0;
 }
 
 .direccion h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .direccion p {
-  max-width: 800px;
+  max-width: 50rem;
   line-height: 1.6;
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 /* ------------------- Introducción a Soda Armonía ------------------- */
+
 .servicios_1 {
+  background-color: #da9d6800;
   width: 100%;
-  height: 26vh;
+  min-height: 26vh;
   padding: 2rem;
   margin-top: 1.8rem;
   text-align: center;
-  background-color: #547e4900;
   color: #f0f0f0;
+  display: grid;
   place-items: center;
 }
 
 .info_servicios_1 {
-  width: 75rem;
-  margin-top: 3.1rem;
+  background-color: #a8e06300;
+  width: 77%;
+  max-width: 55rem;
+  margin-top: 1.6rem;
   font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 /* ------------------- Servicios Soda Armonía ------------------- */
+
 .servicios_2 {
-  background-color: #72e96200;
   width: 100%;
-  color: white;
-  padding: 0 2rem;
-  margin-bottom: 5rem;
+  color: rgb(255, 255, 255);
+  padding: 1rem 4%;
 }
 
 .servicios_2gen {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
   align-items: stretch;
-  gap: 4rem;
-  flex-wrap: wrap;
 }
 
 .servicios2espe {
   background-color: #f5f1e8;
-  border: 3px solid rgb(0, 0, 0);
-  width: 22rem;
+  border: 0.18rem solid rgb(0, 0, 0);
+  width: 100%;
+  max-width: 19rem;
   min-height: 30rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  border-radius: 22px;
+  padding: 0.9rem;
+  border-radius: 1.1rem;
+  overflow: hidden;
 }
 
 .servicios2espe h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #2f5d3a;
+  margin-bottom: 0.7rem;
 }
 
 .servicios2espe p {
-  background-color: #88e96200;
   color: #444;
   width: 100%;
-  min-height: 9rem;
-  padding: 1rem;
+  min-height: 7rem;
+  padding: 0.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 1.25;
+  font-size: 0.88rem;
 }
 
 .grupoFotos {
   width: 100%;
-  margin-top: 0.1rem;
+  margin-top: 0.7rem;
   display: flex;
   justify-content: center;
 }
 
 .fotos {
   width: 100%;
-  height: 13rem;
+  height: 10.5rem;
   object-fit: cover;
-  border: 3px solid rgb(0, 0, 0);
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(216, 33, 33, 0.3);
+  border: 0.18rem solid rgb(0, 0, 0);
+  border-radius: 0.7rem;
+  box-shadow: 0 0.25rem 0.4rem rgba(216, 33, 33, 0.3);
   filter: sepia(30%);
 }
 
-/* -------- Selección u Opciones -------- */
+/* ------------------- Selección / Carrito ------------------- */
 
 .butcarrito {
-  background-color: rgba(218, 207, 103, 0);
+  width: 100%;
+  margin-top: auto;
+  padding-top: 1rem;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  display: flex;
-  margin-top: 1.4rem;
-  width: 15vw;
-  height: 13vh;
-  gap: 1.4rem;
+  gap: 0.7rem;
 }
 
 .text-butcarrito {
-  background-color: rgba(228, 51, 213, 0);
   color: #444;
-  width: 13vw;
+  width: 90%;
+  font-size: 0.85rem;
+  line-height: 1.2;
 }
 
-#mesa-principal {
+#mesa-principal-1,
+#mesa-principal-2,
+#cancha,
+#pq-exclusivo {
+  width: 85%;
+  min-height: 2rem;
   background-color: #f5f1e8;
-  text-align: center;
-  width: 11vw;
   color: #444;
+  text-align: center;
+  font-size: 0.82rem;
 }
 
 button {
   background-color: #da9d68;
   color: white;
-  border-radius: 8px;
-  height: 2.3vh;
-  width: 6vw;
+  border-radius: 1rem;
+  min-height: 2rem;
+  width: 55%;
   border: none;
   cursor: pointer;
+  font-weight: 700;
   transition: all 0.45s ease;
 }
 
 button:hover {
   background-color: #c0392b;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transform: translateY(-0.15rem);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------- Tabla de reservas ------------------- */
+
+.tabla-reservas {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  color: white;
+}
+
+.tabla-reservas h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.tabla-reservas table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0.6rem;
+  overflow: hidden;
+}
+
+.tabla-reservas th {
+  background-color: #1e1e2f;
+  padding: 0.8rem 1rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.tabla-reservas td {
+  padding: 0.7rem 1rem;
+  border-bottom: 0.05rem solid #444;
+  font-size: 0.95rem;
+}
+
+.tabla-reservas tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.ocupado {
+  color: red;
+  font-weight: 600;
+}
+
+/* ------------------- RESPONSIVE ------------------- */
+
+/* Pantallas medianas: 2 arriba y 2 abajo */
+@media (max-width: 75rem) {
+  .info-productos {
+    max-width: 90%;
+    font-size: 1.05rem;
+  }
+
+  .direccion {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .direccion iframe {
+    max-width: 90%;
+    height: 55vh;
+  }
+
+  .direccion h2 {
+    font-size: 2rem;
+  }
+
+  .direccion p {
+    max-width: 90%;
+    font-size: 1rem;
+  }
+
+  .servicios_1 {
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .info_servicios_1 {
+    width: 90%;
+    margin-top: 2rem;
+  }
+
+  .servicios_2 {
+    padding: 2rem 6%;
+  }
+
+  .servicios_2gen {
+    grid-template-columns: repeat(2, minmax(16rem, 22rem));
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  .servicios2espe {
+    max-width: 22rem;
+    min-height: 31rem;
+  }
+
+  .fotos {
+    height: 12rem;
+  }
+
+  #mesa-principal-1,
+  #mesa-principal-2,
+  #cancha,
+  #pq-exclusivo {
+    width: 85%;
+  }
+
+  button {
+    width: 55%;
+  }
+}
+
+@media (max-width: 48rem) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .info-productos {
+    width: 88%;
+    font-size: 1rem;
+    margin: 1.5rem auto;
+  }
+
+  .direccion {
+    padding: 1.5rem 1rem;
+  }
+
+  .direccion iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 45vh;
+  }
+
+  .direccion h2 {
+    font-size: 1.7rem;
+  }
+
+  .direccion p {
+    font-size: 1rem;
+  }
+
+  .servicios_2 {
+    padding: 1.5rem 4%;
+  }
+
+  .servicios_2gen {
+    grid-template-columns: repeat(2, minmax(12rem, 1fr));
+    gap: 1.2rem;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .servicios2espe {
+    width: 100%;
+    max-width: 18rem;
+    min-height: 28rem;
+    padding: 0.8rem;
+    border-radius: 1rem;
+  }
+
+  .servicios2espe h3 {
+    font-size: 0.9rem;
+  }
+
+  .servicios2espe p {
+    font-size: 0.78rem;
+    min-height: 6.5rem;
+    padding: 0.5rem;
+  }
+
+  .fotos {
+    height: 9.5rem;
+  }
+
+  .butcarrito {
+    gap: 0.6rem;
+    padding-top: 0.8rem;
+  }
+
+  .text-butcarrito {
+    font-size: 0.78rem;
+    width: 95%;
+  }
+
+  #mesa-principal-1,
+  #mesa-principal-2,
+  #cancha,
+  #pq-exclusivo {
+    width: 95%;
+    font-size: 0.72rem;
+  }
+
+  button {
+    width: 70%;
+    min-height: 2rem;
+    font-size: 0.78rem;
+  }
+
+  .tabla-reservas {
+    padding: 1rem;
+    margin-top: 2rem;
+    overflow-x: visible;
+  }
+
+  .tabla-reservas h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .tabla-reservas table,
+  .tabla-reservas thead,
+  .tabla-reservas tbody,
+  .tabla-reservas th,
+  .tabla-reservas td,
+  .tabla-reservas tr {
+    display: block;
+    width: 100%;
+  }
+
+  .tabla-reservas table {
+    min-width: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: transparent;
+  }
+
+  .tabla-reservas thead {
+    display: none;
+  }
+
+  .tabla-reservas tr {
+    background: rgba(0, 0, 0, 0.65);
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+  }
+
+  .tabla-reservas td {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+    padding: 0.9rem 1rem;
+    border-bottom: 0.05rem solid rgba(255, 255, 255, 0.15);
+    font-size: 0.95rem;
+  }
+
+  .tabla-reservas td::before {
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04rem;
+    opacity: 0.85;
+  }
+
+  .tabla-reservas td:nth-child(1)::before {
+    content: "Servicio";
+  }
+
+  .tabla-reservas td:nth-child(2)::before {
+    content: "Espacio seleccionado";
+  }
+
+  .tabla-reservas td:nth-child(3)::before {
+    content: "Disponibilidad";
+  }
+
+  .tabla-reservas td[colspan="3"] {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .tabla-reservas td[colspan="3"]::before {
+    content: "";
+  }
+}
+
+@media (max-width: 32rem) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .info-productos {
+    font-size: 0.95rem;
+  }
+
+  .direccion h2 {
+    font-size: 1.5rem;
+  }
+
+  .direccion p {
+    font-size: 0.95rem;
+  }
+
+  .info_h2 {
+    font-size: 1.3rem;
+  }
+
+  .info_servicios_1 {
+    font-size: 0.95rem;
+  }
+
+  .servicios_2 {
+    padding: 1rem 5%;
+  }
+
+  .servicios_2gen {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .servicios2espe {
+    width: 100%;
+    max-width: 21rem;
+    min-height: auto;
+    padding: 1rem;
+  }
+
+  .servicios2espe h3 {
+    font-size: 1rem;
+  }
+
+  .servicios2espe p {
+    font-size: 0.9rem;
+    min-height: auto;
+  }
+
+  .fotos {
+    height: 12rem;
+  }
+
+  .text-butcarrito,
+  #mesa-principal-1,
+  #mesa-principal-2,
+  #cancha,
+  #pq-exclusivo {
+    width: 100%;
+  }
+
+  button {
+    width: 75%;
+    min-height: 2.4rem;
+  }
 }

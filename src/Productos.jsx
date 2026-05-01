@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Header from './components/Header.jsx';
 import './Productos.css'
 import CircularGallery from './components/CircularGallery.jsx'
 import galloPinto from './assets/productos/gallo-pinto.jpg'
@@ -11,7 +10,8 @@ import bancas1 from './assets/servicios/bancas.jpg'
 import bancas2 from './assets/servicios/bancas_atras.jpg'
 import yard from './assets/servicios/yard.jpg'
 import parking from './assets/servicios/parking.jpg'
-import { supabase } from './supabaseCliente.js'
+import { probarConexion } from './supabaseCliente.js'
+import { useCarrito } from './hooks/useCarrito'
 
 
 function App() {
@@ -22,6 +22,8 @@ function App() {
   { image: pieLimon, text: 'Postres' },
   { image: jugoSandia, text: 'Jugos naturales' },
 ];
+
+  const { carrito, agregar, eliminar } = useCarrito()
 
   return (
     <>
@@ -93,7 +95,7 @@ function App() {
       <section className='servicios_2'>
         <div className='servicios_2gen'>
           <div className='servicios2espe'>
-            <h3>Zona de Descanso Principal</h3>
+            <h3>Zona de Descanso #1</h3>
             <p>Disfruta de un espacio cómodo y tranquilo al aire libre, 
               ideal para relajarte, compartir con otras personas y disfrutar tus comidas en un ambiente natural y agradable.</p>
               <div className='grupoFotos'>
@@ -101,9 +103,9 @@ function App() {
               </div>
               <div className='butcarrito'>
 
-                <label htmlFor="mesa-principal" className='text-butcarrito'>¿Cuál mesa desea reservar?</label>
+                <label htmlFor="act-principal" className='text-butcarrito'>¿Cuál mesa desea reservar?</label>
 
-                <select name="mesa-principal" id="mesa-principal" defaultValue="">
+                <select name="act-principal" id="mesa-principal-1" defaultValue="">
                   <option value="" disabled>--Seleccione una mesa--</option>
                   <option value="mesa-1">Mesa 1</option>
                   <option value="mesa-2">Mesa 2</option>  
@@ -114,7 +116,7 @@ function App() {
               </div>
           </div>
           <div className='servicios2espe'>
-            <h3>Zona de Descanso junto a la Cancha</h3>
+            <h3>Zona de Descanso #2</h3>
             <p>Contás con áreas ubicadas cerca de la cancha donde podés 
               sentarte a descansar, conversar o simplemente disfrutar del entorno mientras observás los partidos.</p>
               <div className='grupoFotos'>
@@ -122,9 +124,9 @@ function App() {
               </div>
               <div className='butcarrito'>
 
-                <label htmlFor="mesa-principal" className='text-butcarrito'>¿Cuál mesa desea reservar?</label>
+                <label htmlFor="act-principal" className='text-butcarrito'>¿Cuál mesa desea reservar?</label>
 
-                <select name="mesa-principal" id="mesa-principal" defaultValue="">
+                <select name="act-principal" id="mesa-principal-2" defaultValue="">
                   <option value="" disabled>--Seleccione una mesa--</option>
                   <option value="mesa-1-2">Mesa 1</option>
                   <option value="mesa-2-2">Mesa 2</option>  
@@ -143,9 +145,9 @@ function App() {
               </div>
               <div className='butcarrito'>
 
-                <label htmlFor="mesa-principal" className='text-butcarrito'>¿Cuál hora desea reservar?</label>
+                <label htmlFor="act-principal" className='text-butcarrito'>¿Cuál hora desea reservar?</label>
 
-                <select name="mesa-principal" id="mesa-principal" defaultValue="">
+                <select name="act-principal" id="cancha" defaultValue="">
                   <option value="" disabled>--Seleccione una hora--</option>
                   <option value="hora-1">7:00 am - 8:00 am</option>
                   <option value="hora-2">8:30 am - 9:30 am</option>  
@@ -167,9 +169,9 @@ function App() {
               </div>
               <div className='butcarrito'>
 
-                <label htmlFor="mesa-principal" className='text-butcarrito'>¿Cuál campo desea reservar?</label>
+                <label htmlFor="act-principal" className='text-butcarrito'>¿Cuál campo desea reservar?</label>
 
-                <select name="mesa-principal" id="mesa-principal" defaultValue="">
+                <select name="act-principal" id="pq-exclusivo" defaultValue="">
                   <option value="" disabled>--Seleccione un campo--</option>
                   <option value="mesa-1">Campo 1</option>
                   <option value="mesa-2">Campo 2</option>  
@@ -181,6 +183,36 @@ function App() {
               </div>
           </div>
         </div>
+      </section>
+
+      <section className="tabla-reservas">
+        <h2>Reservas</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Servicio</th>
+              <th>Espacio seleccionado</th>
+              <th>Disponibilidad</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {carrito.length === 0 ? (
+              <tr>
+                <td colSpan={3}>No hay reservas aún</td>
+              </tr>
+            ) : (
+              carrito.map((item, index) => (
+                <tr key={index}>
+                  <td>{item.tipo}</td>
+                  <td>{item.valor}</td>
+                  <td className='ocupado'>Ocupado</td>
+                </tr>
+              ))
+            )}
+          </tbody>
+        </table>
       </section>
     </>
   )
